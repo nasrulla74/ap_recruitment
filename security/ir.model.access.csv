@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_xpat_worktypes,xpat_worktypes,model_xpat_worktypes,base.group_user,1,1,1,1
+access_xpat_worktsites,xpat_worktsites,model_xpat_worktsites,base.group_user,1,1,1,1
