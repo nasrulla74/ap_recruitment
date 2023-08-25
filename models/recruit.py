@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
-from email.policy import default
-import string
-from unicodedata import category
-from odoo import api, fields, models, _
-#from odoo.exceptions import ValidationError
-from datetime import datetime, date
+from odoo import fields, models
+
 
 class XpatWorkTypes(models.Model):
     _name = "xpat.worktypes"
@@ -45,6 +41,7 @@ class InheritPartner(models.Model):
     work_site_id = fields.Many2one('xpat.worktsites', string="Work Site")
     contract_status_id = fields.Many2one('hr.contract.type', string="Contract Status")
 
+
 class SetCustomerHeaderFooter(models.Model):
     """"""
     _inherit = "res.partner"
@@ -56,4 +53,3 @@ class SetCustomerHeaderFooter(models.Model):
     customer_header_height = fields.Char("Header height", default="100")
     customer_footer_width = fields.Char("Footer Width", default="1000")
     customer_footer_height = fields.Char("Footer height", default="75")
-

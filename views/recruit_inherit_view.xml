@@ -12,8 +12,12 @@
                         <field name="current_address" />
                     </xpath>
                     <xpath expr="//field[@name='categ_ids']" position="after">
+                        <field name="partner_id" string="Customer/Client"/>
+                    </xpath>
+                    <xpath expr="//field[@name='partner_id']" position="after">
                         <field name="passport_number" />
                     </xpath>
+
                     <xpath expr="//field[@name='passport_number']" position="after">
                         <field name="nationality" />
                     </xpath>
