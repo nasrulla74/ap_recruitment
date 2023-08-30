@@ -56,6 +56,7 @@ class SetCustomerHeaderFooter(models.Model):
     customer_header = fields.Image("Header")
     customer_footer = fields.Image("Footer")
     customer_seal = fields.Image("Customer Seal")
+    customer_sign = fields.Image("Customer Sign")
     customer_header_width = fields.Char("Header Width", default="1000")
     customer_header_height = fields.Char("Header height", default="100")
     customer_footer_width = fields.Char("Footer Width", default="1000")

@@ -128,10 +128,12 @@
                                     <span style="letter-spacing: .4rem;" t-esc="o.apply_date.strftime('%Y')" />
                                 </div>
                         </t>
-                            <div style="position:fixed; left: 610px; top: 1100px;">
-                            <img t-if="o.partner_id.customer_seal"  style="max-height:95pt;max-width:90%" t-att-src="'data:image/*;base64,%s' % o.partner_id.customer_seal.decode('utf-8')"/>
-
-                        </div>
+                            <div style="position:fixed; left: 710px; top: 1070px;">
+                                <img t-if="o.partner_id.customer_seal"  style="max-height:95pt;max-width:90%" t-att-src="'data:image/*;base64,%s' % o.partner_id.customer_seal.decode('utf-8')"/>
+                            </div>
+                            <div style="position:fixed; left: 610px; top: 1050px;">
+                                <img t-if="o.partner_id.customer_sign"  style="max-height:95pt;max-width:90%" t-att-src="'data:image/*;base64,%s' % o.partner_id.customer_sign.decode('utf-8')"/>
+                            </div>
 
 
                        </div>
