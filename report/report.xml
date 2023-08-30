@@ -11,4 +11,15 @@
         <field name="binding_type">report</field>
     </record>
 
+    <record id="hr_recruit_im30_form" model="ir.actions.report">
+        <field name="name">IM30 Form</field>
+        <field name="model">hr.applicant</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ap_recruitment.im30_form</field>
+        <field name="report_file">ap_recruitment.im30_form</field>
+        <field name="print_report_name">'Print IM30 From - %s' % (object.name).replace('/', '')</field>
+        <field name="binding_model_id" ref="model_hr_applicant"/>
+        <field name="binding_type">report</field>
+    </record>
+
 </odoo>

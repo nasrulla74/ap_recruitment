@@ -18,6 +18,7 @@
         'views/xpat_worktype_view.xml',
         'views/header_footer_view.xml',
         'report/appointment_letter.xml',
+        'report/im30.xml',
         'report/report.xml',
     ],
 

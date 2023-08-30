@@ -22,12 +22,14 @@ class InheritPartner(models.Model):
 
     permanent_address = fields.Text('Permanent Address')
     current_address = fields.Text('Current Address')
-    other_benefits = fields.Text('Other Benefits')
+    other_benefits = fields.Html('Other Benefits')
     passport_number = fields.Char('Passport Number')
+    pp_expiry = fields.Date('Passport Expiry')
     nationality = fields.Char('Nationality')
     xpat_position = fields.Char('Xpat Position')
     remuneration = fields.Char('Remuneration')
     working_hours = fields.Char('Working Hours')
+    mobile_number = fields.Char('Mobile Number')
     salary_payment = fields.Char('Salary Payment')
     emergency_contact_name = fields.Char('Emergency Contact Name')
     emergency_contact_number = fields.Char('Emergency Contact Number')
@@ -40,7 +42,12 @@ class InheritPartner(models.Model):
     work_type_id = fields.Many2one('xpat.worktypes', string="Work Type")
     work_site_id = fields.Many2one('xpat.worktsites', string="Work Site")
     contract_status_id = fields.Many2one('hr.contract.type', string="Contract Status")
-
+    is_married = fields.Selection([('yes', 'Yes'), ('no', 'No')],
+                                 default='no', string="Is Married")
+    gender = fields.Selection([('male', 'Male'), ('female', 'Female')],
+                                  default='male', string="Gender")
+    visa_type = fields.Selection([('work', 'Work Visa'), ('business', 'Business Visa'), ('special','Special Visa')],
+                              default='work', string="Visa Type")
 
 class SetCustomerHeaderFooter(models.Model):
     """"""

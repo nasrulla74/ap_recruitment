@@ -11,11 +11,21 @@
                      <xpath expr="//field[@name='permanent_address']" position="after">
                         <field name="current_address" />
                     </xpath>
+                    <xpath expr="//field[@name='categ_ids']" position="before">
+                        <field name="visa_type" string="Visa Type"/>
+                    </xpath>
                     <xpath expr="//field[@name='categ_ids']" position="after">
                         <field name="partner_id" string="Customer/Client"/>
                     </xpath>
                     <xpath expr="//field[@name='partner_id']" position="after">
                         <field name="passport_number" />
+                    </xpath>
+
+                    <xpath expr="//field[@name='passport_number']" position="after">
+                        <field name="pp_expiry" />
+                    </xpath>
+                    <xpath expr="//field[@name='pp_expiry']" position="after">
+                        <field name="mobile_number" />
                     </xpath>
 
                     <xpath expr="//field[@name='passport_number']" position="after">
@@ -64,6 +74,14 @@
                         <field name="salary_payment" />
                     </xpath>
 
+                    <xpath expr="//field[@name='salary_payment']" position="after">
+                        <field name="gender" />
+                    </xpath>
+
+                    <xpath expr="//field[@name='gender']" position="after">
+                        <field name="is_married" />
+                    </xpath>
+
                     <xpath expr="//field[@name='availability']" position="before">
                         <field name="contract_start" />
                     </xpath>
@@ -77,6 +95,9 @@
                         <attribute name="invisible">1</attribute>
                      </field>
                      <field name='partner_phone' position="attributes">
+                        <attribute name="invisible">1</attribute>
+                     </field>
+                    <field name='partner_mobile' position="attributes">
                         <attribute name="invisible">1</attribute>
                      </field>
                     <field name='email_cc' position="attributes">
