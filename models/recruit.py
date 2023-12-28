@@ -48,6 +48,11 @@ class InheritPartner(models.Model):
                                   default='male', string="Gender")
     visa_type = fields.Selection([('work', 'Work Visa'), ('business', 'Business Visa'), ('special','Special Visa')],
                               default='work', string="Visa Type")
+    wp_number = fields.Char('Work Permit Number')
+    wp_expiry = fields.Date('WP Expiry Date')
+    slot_expiry = fields.Date('Slot Expiry Date')
+    card_expiry = fields.Date('Card Expiry Date')
+    insurance_expiry = fields.Date('Insurance Expiry Date')
 
 class SetCustomerHeaderFooter(models.Model):
     """"""

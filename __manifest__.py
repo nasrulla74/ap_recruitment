@@ -19,6 +19,7 @@
         'views/header_footer_view.xml',
         'report/appointment_letter.xml',
         'report/im30.xml',
+        'report/insurance_request.xml',
         'report/report.xml',
     ],
 

@@ -91,6 +91,24 @@
                      <xpath expr="//field[@name='contract_end']" position="after">
                         <field name="contract_status_id" />
                     </xpath>
+
+                    <xpath expr="//field[@name='visa_type']" position="after">
+                        <field name="wp_number" />
+                    </xpath>
+                    <xpath expr="//field[@name='wp_number']" position="after">
+                        <field name="wp_expiry" />
+                    </xpath>
+                    <xpath expr="//field[@name='wp_expiry']" position="after">
+                        <field name="card_expiry" />
+                    </xpath>
+                    <xpath expr="//field[@name='card_expiry']" position="after">
+                        <field name="insurance_expiry" />
+                    </xpath><xpath expr="//field[@name='insurance_expiry']" position="after">
+                        <field name="slot_expiry" />
+                    </xpath>
+
+
+
                      <field name='source_id' position="attributes">
                         <attribute name="invisible">1</attribute>
                      </field>

@@ -46,7 +46,7 @@
                         </div>
 
                         <div style="position:fixed; left: 495px; top: 365px;">
-                            <span class="text-uppercase" style="letter-spacing: .1rem;" t-esc="o.nationality" />
+                            <span class="text-uppercase text-nowrap" style="letter-spacing: .1rem;" t-esc="o.nationality" />
                         </div>
 
                         <t t-if="o.is_married == 'yes'">
@@ -97,13 +97,15 @@
                             <span class="text-uppercase text-nowrap" t-esc="o.mobile_number" />
                         </div>
 
-
-                        <div style="position:fixed; left: 195px; top: 1010px;">
-                            <span class="text-uppercase text-nowrap" t-esc="o.partner_id.name" />
-                        </div>
-                            <div style="position:fixed; left: 725px; top: 1015px;">
+                        <t t-if="o.partner_id.is_company">
+                            <div style="position:fixed; left: 195px; top: 1010px;">
+                                <span class="text-uppercase text-nowrap" t-esc="o.partner_id.name" />
+                            </div>
+                        </t>
+                        <div style="position:fixed; left: 725px; top: 1015px;">
                             <span class="text-uppercase text-nowrap" t-esc="o.partner_id.vat" />
                         </div>
+
                         <div style="position:fixed; left: 195px; top: 1043px;">
                             <span class="text-uppercase text-nowrap" t-esc="o.sponsor_name" />
                         </div>
