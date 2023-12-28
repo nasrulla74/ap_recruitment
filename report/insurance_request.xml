@@ -8,18 +8,18 @@
                         <div class="page position-fixed" t-attf-style="background-image:url('/ap_recruitment/static/img/insurance_form.jpg'); background-size:245mm 330mm; width:245mm; height:330mm;">
 <!--                        <div class="page" t-attf-style="background-image:url('/ap_recruitment/static/img/emp-bus-spc-airports.jpg'); background-size:195mm 282mm; width:195mm; height:282mm;">-->
 
-                        <t t-if="o.partner_id.is_company">
+
                             <div style="position:fixed; left: 135px; top: 230px;">
                                 <span class="text-uppercase text-nowrap" t-esc="o.partner_id.name" />
                             </div>
-                        </t>
+
 
                             <div style="position:fixed; left: 700px; top: 230px;">
                             <span class="text-uppercase text-nowrap" t-esc="o.partner_id.vat" />
                         </div>
 
                         <div style="position:fixed; left: 135px; top: 275px;">
-                            <t t-esc="o.partner_id.street"/> <t t-esc="o.partner_id.street2"/> <t t-esc="o.partner_id.city"/>
+                            <t t-esc="o.partner_id.street"/> <t t-esc="o.partner_id.street2"/> <t class="text-nowrap" t-esc="o.partner_id.city"/>
                         </div>
 
                             <div style="position:fixed; left: 840px; top: 275px;">
@@ -40,16 +40,19 @@
 
 
                         <div style="position:fixed; left: 100px; top: 600px;">
-                            <span class="text-nowrap" t-esc="o.partner_name" />
+                            <span class="text-nowrap" style="font-size: 16px;" t-esc="o.partner_name" />
                         </div>
 
                         <div style="position:fixed; left: 440px; top: 600px;">
-                            <span t-esc="o.passport_number" />
+                            <span style="font-size: 16px;" t-esc="o.passport_number" />
                         </div>
 
+                        <t t-if="o.wp_number">
                             <div style="position:fixed; left: 535px; top: 600px;">
-                            <span style="font-size: 16px;" t-esc="o.wp_number[-8:]"/>
-                        </div>
+                                <span style="font-size: 16px;" t-esc="o.wp_number[-8:]"/>
+                            </div>
+                        </t>
+
 
 
 
