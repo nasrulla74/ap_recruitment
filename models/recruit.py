@@ -53,6 +53,9 @@ class InheritPartner(models.Model):
     slot_expiry = fields.Date('Slot Expiry Date')
     card_expiry = fields.Date('Card Expiry Date')
     insurance_expiry = fields.Date('Insurance Expiry Date')
+    arrival_date = fields.Date('Arrival Date')
+    departure_date = fields.Date('Departure Date')
+    medical_expiry = fields.Date('Medical Expiry Date')
 
 class SetCustomerHeaderFooter(models.Model):
     """"""

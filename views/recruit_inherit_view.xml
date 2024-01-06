@@ -14,6 +14,11 @@
                     <xpath expr="//field[@name='categ_ids']" position="before">
                         <field name="visa_type" string="Visa Type"/>
                     </xpath>
+                    <xpath expr="//field[@name='visa_type']" position="before">
+                        <field name="arrival_date" string="Arrival Date"/>
+                    </xpath>
+
+
                     <xpath expr="//field[@name='categ_ids']" position="after">
                         <field name="partner_id" string="Customer/Client"/>
                     </xpath>
@@ -103,8 +108,15 @@
                     </xpath>
                     <xpath expr="//field[@name='card_expiry']" position="after">
                         <field name="insurance_expiry" />
-                    </xpath><xpath expr="//field[@name='insurance_expiry']" position="after">
+                    </xpath>
+                    <xpath expr="//field[@name='insurance_expiry']" position="after">
                         <field name="slot_expiry" />
+                    </xpath>
+                    <xpath expr="//field[@name='slot_expiry']" position="after">
+                        <field name="medical_expiry" />
+                    </xpath>
+                    <xpath expr="//field[@name='medical_expiry']" position="after">
+                        <field name="departure_date" />
                     </xpath>
 
 
