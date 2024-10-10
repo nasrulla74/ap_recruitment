@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="appointment_letter">
+    <template id="appointment_letter_individual">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="o">
                 <t t-call="web.external_layout">
@@ -37,7 +37,7 @@
                                     </tr>
                                       <tr>
                                       <td class="py-1" style="width:700pt; font-size: 17px;" valign="center">Company Registration Number/Id No:</td>
-                                      <td class="py-1" style="width:900pt; font-size: 17px;" valign="left"><t t-esc="o.partner_id.company_registry"/></td>
+                                      <td class="py-1" style="width:900pt; font-size: 17px;" valign="left"><t t-esc="o.partner_id.vat"/></td>
                                     </tr>
 
                                   </tbody>
@@ -154,14 +154,9 @@
 
                                        <tr>
                                       <td class="py-4" style="width:700pt;font-size: 17px;" valign="center">Signature/Stamp:
-                                        <div style="position:fixed; left: 270px; top: 1100px;">
-                                            <img t-if="o.partner_id.customer_seal"  style="max-height:95pt;max-width:90%" t-att-src="'data:image/*;base64,%s' % o.partner_id.customer_seal.decode('utf-8')"/>
-                                        </div>
                                         <div style="position:fixed; left: 170px; top: 1080px;">
                                             <img t-if="o.partner_id.customer_sign"  style="max-height:95pt;max-width:90%" t-att-src="'data:image/*;base64,%s' % o.partner_id.customer_sign.decode('utf-8')"/>
                                         </div>
-<!--                                       <img t-if="o.partner_id.customer_seal"  style="max-height:95pt;max-width:90%" t-att-src="'data:image/*;base64,%s' % o.partner_id.customer_seal.decode('utf-8')"/>-->
-<!--                                       <img t-if="o.partner_id.customer_sign"  style="max-height:95pt;max-width:90%" t-att-src="'data:image/*;base64,%s' % o.partner_id.customer_sign.decode('utf-8')"/>-->
 
                                       </td>
                                         <td class="py-1" style="width:900pt;" valign="center">Signature: </td>
@@ -182,37 +177,7 @@
         </t>
 
 
-<!--        <t t-call="web.external_layout">-->
-<!--            <div class="page">-->
-<!--                <t t-foreach="docs" t-as="o">-->
-<!--                    <div class="col-md-6">-->
-<!--                        <table style="width:243pt; height:153pt; border: 1pt solid black; border-collapse:separate; border-radius:8pt; margin:5pt">-->
-<!--                            <td style="width:33%;" valign="center">-->
-<!--                                <table style="width:77pt; height:150pt" class="table-borderless">-->
-<!--                                    <tr style="height:30%">-->
-<!--                                        <td align="center" valign="center">-->
-<!--&lt;!&ndash;                                            <img t-if="employee.company_id.logo" t-att-src="image_data_uri(employee.company_id.logo)" style="max-height:45pt;max-width:90%" alt="Company Logo"/>&ndash;&gt;-->
-<!--                                        </td>-->
-<!--                                    </tr>-->
-<!--                                    <tr style="height:70%;">-->
-<!--                                        <td align="center" valign="center">-->
-<!--&lt;!&ndash;                                            <img t-att-src="image_data_uri(employee.avatar_1920)" style="max-height:85pt;max-width:90%" alt="Employee Image"/>&ndash;&gt;-->
-<!--                                        </td>-->
-<!--                                    </tr>-->
-<!--                                </table>-->
-<!--                            </td>-->
-<!--                            <td style="width:67%" valign="center">-->
-<!--                                <table style="width:155pt; height:85pt" class="table-borderless">-->
-<!--                                    <tr><th><div style="font-size:15pt; margin-bottom:0pt;margin-top:0pt;" align="center"><t t-esc="o.name"/></div></th></tr>-->
-<!--                                    <tr><td><div align="center" style="font-size:10pt;margin-bottom:5pt;"><t t-esc="o.name"/></div></td></tr>-->
-<!--&lt;!&ndash;                                    <tr><td><div t-if="employee.barcode" t-field="employee.barcode" t-options="{'widget': 'barcode', 'width': 600, 'height': 120, 'img_style': 'max-height:50pt;max-width:100%;', 'img_align': 'center'}"/></td></tr>&ndash;&gt;-->
-<!--                                </table>-->
-<!--                            </td>-->
-<!--                        </table>-->
-<!--                    </div>-->
-<!--                </t>-->
-<!--            </div>-->
-<!--        </t>-->
+
     </template>
 
 </odoo>

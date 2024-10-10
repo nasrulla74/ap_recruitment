@@ -40,7 +40,7 @@
 
 
                         <div style="position:fixed; left: 100px; top: 600px;">
-                            <span class="text-nowrap" style="font-size: 16px;" t-esc="o.partner_name" />
+                            <span class="text-nowrap" style="font-size: 16px;" t-esc="o.short_name" />
                         </div>
 
                         <div style="position:fixed; left: 440px; top: 600px;">

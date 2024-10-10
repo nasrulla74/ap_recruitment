@@ -25,21 +25,38 @@
                     <xpath expr="//field[@name='partner_id']" position="after">
                         <field name="passport_number" />
                     </xpath>
-
+                    <xpath expr="//field[@name='partner_id']" position="before">
+                        <field name="short_name" />
+                    </xpath>
                     <xpath expr="//field[@name='passport_number']" position="after">
+                        <field name="pp_issue" />
+                    </xpath>
+
+                    <xpath expr="//field[@name='pp_issue']" position="after">
                         <field name="pp_expiry" />
                     </xpath>
+
                     <xpath expr="//field[@name='pp_expiry']" position="after">
-                        <field name="mobile_number" />
+                        <field name="pp_place_issue" />
                     </xpath>
 
-                    <xpath expr="//field[@name='passport_number']" position="after">
+                    <xpath expr="//field[@name='pp_place_issue']" position="after">
+                        <field name="pp_profession" />
+                    </xpath>
+
+
+                    <xpath expr="//field[@name='pp_profession']" position="after">
                         <field name="nationality" />
                     </xpath>
-                    <xpath expr="//field[@name='nationality']" position="after">
+
+                     <xpath expr="//field[@name='nationality']" position="after">
                         <field name="birth_date" />
                     </xpath>
+
                     <xpath expr="//field[@name='birth_date']" position="after">
+                        <field name="mobile_number" />
+                    </xpath>
+                    <xpath expr="//field[@name='mobile_number']" position="after">
                         <field name="emergency_contact_name" />
                     </xpath>
                     <xpath expr="//field[@name='emergency_contact_name']" position="after">
@@ -84,6 +101,10 @@
                     </xpath>
 
                     <xpath expr="//field[@name='gender']" position="after">
+                        <field name="person_title" />
+                    </xpath>
+
+                    <xpath expr="//field[@name='gender']" position="after">
                         <field name="is_married" />
                     </xpath>
 
@@ -115,9 +136,19 @@
                     <xpath expr="//field[@name='slot_expiry']" position="after">
                         <field name="medical_expiry" />
                     </xpath>
+
+
                     <xpath expr="//field[@name='medical_expiry']" position="after">
                         <field name="departure_date" />
                     </xpath>
+                    <xpath expr="//field[@name='department_id']" position="after">
+                        <field name="company_id" groups="base.group_system"/>
+                    </xpath>
+<!--                    <xpath expr="//field[@name='department_id']" position="after">-->
+<!--                        <field name="win_local_folder" />-->
+<!--                        <button name="open_win_folder" type="object" string="Open Folder" class="btn-primary"/>-->
+
+<!--                    </xpath>-->
 
 
 

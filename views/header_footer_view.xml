@@ -13,13 +13,15 @@
                         <page string="Header &amp; Footer Layout">
 
                             <div class="o_row">
-                                <field name="customer_header" widget="image" class="float-left oe_avatar"
+                                 <h6>Header : </h6>
+                                <field name="customer_header" widget="image" class="float-left oe_avatar" string="Header"
                                        options="{'size': [300, 80]}" required="0"/>
                                 <field name="customer_header_width" required="0"/>
                                 <span>,</span>
                                 <field name="customer_header_height" required="0"/>
                             </div>
                             <div class="o_row">
+                                 <h6>Footer : </h6>
                                 <field name="customer_footer" widget="image" class="float-left oe_avatar"
                                        options="{'size': [300, 80]}" required="0"/>
                                 <field name="customer_footer_width" required="0"/>
@@ -27,11 +29,13 @@
                                 <field name="customer_footer_height" required="0"/>
                             </div>
                             <div class="o_row">
+                                 <h6>Company Seal : </h6>
                                 <field name="customer_seal" widget="image" class="float-left oe_avatar"
                                        options="{'size': [300, 80]}"/>
 
                             </div>
                             <div class="o_row">
+                                <h6>Signature : </h6>
                                 <field name="customer_sign" widget="image" class="float-left oe_avatar"
                                        />
 
@@ -41,5 +45,11 @@
                 </data>
             </field>
         </record>
+
+
+
+
+
     </data>
 </odoo>
+

@@ -85,9 +85,15 @@
                             <span class="text-uppercase text-nowrap" style="letter-spacing: .1rem;" t-esc="o.visa_type" />
                         </div>
 
-                        <div style="position:fixed; left: 540px; top: 485px;">
-                            <span class="text-uppercase text-nowrap" t-esc="o.work_site_id.name" />
+                        <div style="position:fixed; left: 540px; top: 483px;">
+<!--                            <span class="text-uppercase text-nowrap" t-esc="o.work_site_id.name" />-->
+                            <span style="font-size: 13px;" t-esc="o.work_site_id.name"/>
                         </div>
+                            <div style="position:fixed; left: 540px; top: 495px;">
+<!--                            <span class="text-uppercase text-nowrap" t-esc="o.work_site_id.name" />-->
+                            <span class="text-nowrap" style="font-size: 12px;" t-esc="o.work_site_id.address" />
+                        </div>
+
 
                         <div style="position:fixed; left: 190px; top: 525px;">
                             <span class="text-uppercase text-nowrap" t-esc="o.current_address" />
@@ -97,7 +103,12 @@
                             <span class="text-uppercase text-nowrap" t-esc="o.mobile_number" />
                         </div>
 
-                        <t t-if="o.partner_id.is_company">
+<!--                        <t t-if="o.partner_id.is_company">-->
+<!--                            <div style="position:fixed; left: 195px; top: 1010px;">-->
+<!--                                <span class="text-uppercase text-nowrap" t-esc="o.partner_id.name" />-->
+<!--                            </div>-->
+<!--                        </t>-->
+                            <t>
                             <div style="position:fixed; left: 195px; top: 1010px;">
                                 <span class="text-uppercase text-nowrap" t-esc="o.partner_id.name" />
                             </div>
