@@ -1,7 +1,7 @@
 
 {
-    'name': 'Appeul Recruit Inherit 1.7.1',
-    'version': '17.0.1.7.1',
+    'name': 'Appeul Recruit Inherit 1.6.9',
+    'version': '17.0.1.6.9',
     'summary': 'Appeul Recruit Inherit',
     'description': """Appeul Recruit Inherit""",
     'author': 'Appeul Services',

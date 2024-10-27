@@ -37,7 +37,7 @@
                                     </tr>
                                       <tr>
                                       <td class="py-1" style="width:700pt; font-size: 17px;" valign="center">Company Registration Number/Id No:</td>
-                                      <td class="py-1" style="width:900pt; font-size: 17px;" valign="left"><t t-esc="o.partner_id.company_registry"/></td>
+                                      <td class="py-1" style="width:900pt; font-size: 17px;" valign="left"><t t-esc="o.partner_id.vat"/></td>
                                     </tr>
 
                                   </tbody>

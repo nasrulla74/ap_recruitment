@@ -78,7 +78,6 @@ class InheritPartner(models.Model):
     pp_profession = fields.Char('PP: Profession')
     short_name = fields.Char('Short Name')
 
-
     def open_win_folder(self):
         print("open_win_folder click", self.win_local_folder)
         isvalid = is_valid_folder(self.win_local_folder)
@@ -118,8 +117,6 @@ class SetCustomerHeaderFooter(models.Model):
     customer_footer_width = fields.Char("Footer Width", default="1000")
     customer_footer_height = fields.Char("Footer height", default="75")
     shareholder_id = fields.Many2one('res.company', string="Shareholder")
-    x_occupation_type = fields.Char("Occupation Type")
-    x_monthly_income = fields.Char("monthly_income")
 
 
 
